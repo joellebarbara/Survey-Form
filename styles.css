@@ -1,0 +1,96 @@
+/* styles.css */
+
+body {
+    background-color: #f9f8f7;
+    background-size: cover; 
+    background-position: center; 
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.survey-container {
+    max-width: 600px;
+    margin: 20px auto;
+
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+
+
+
+
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: center;
+    color: #333;
+    
+}
+
+
+
+input, select, textarea {
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+input[type="radio"] {
+    width: auto; /* Make radio buttons not take the full width */
+    margin-right: 8px; /* Adjust as needed for spacing between radio button and label */
+}
+input[type="checkbox"] {
+    width: auto; /* Make radio buttons not take the full width */
+    margin-right: 8px; /* Adjust as needed for spacing between radio button and label */
+}
+
+label[for^="satisfaction"] {
+    align-items: left;
+    text-align: left;
+
+    margin-bottom: 10px; /* Adjust as needed for spacing between labels */
+}
+
+label[for="checkbox"] {
+    align-items: left;
+    text-align: left;
+
+    margin-bottom: 10px; /* Adjust as needed for spacing between labels */
+}
+
+/* Other styles for .radio-container */
+.radio-container {
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+button {
+    background-color: #153147;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #0056b3;
+}
