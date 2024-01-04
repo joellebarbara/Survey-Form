@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Customer Satisfaction Survey</title>
+</head>
+
+<body>
+    <div class="survey-container">
+        <h1 id="title">InnovaTech Customer Satisfaction Survey</h1>
+        <p id="description">Thank you for choosing our innovative communication technology device. Your feedback is valuable to us.</p>
+        <form action="submit_survey.php" method="post" id="survey-form">
+
+            <!-- Personal Information -->
+            <label id="name-label">Full Name :<input id="name" type="text" placeholder="Enter your full name" required></label>
+            <label id="email-label">E-mail address :<input id="email" type="email" placeholder="Enter your E-mail address" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required
+                title="Please enter a valid email address"></label>
+            <!-- Demographic Information -->
+            <label id="number-label">Age : (Optional)</label>
+            <input type="number" id="number" name="age" placeholder="Enter your age" pattern="\d+" min="13" max="120"
+                title="Please enter a valid numeric value for age (between 13 and 120)">
+
+            <label for="gender">Gender : (Optional)</label>
+            <select id="dropdown" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Overall Satisfaction -->
+                <div class="radio-container">
+        <form id="survey-form">
+            <!-- Device Satisfaction -->
+            <h2>Device Satisfaction</h2>
+            <p>How satisfied are you with our device?</p>
+                <label for="satisfaction-5" required><input type="radio" id="satisfaction-5" name="satisfaction" value="5">
+Completely satisfied</label>
+
+                <label for="satisfaction-4" required><input type="radio" id="satisfaction-4" name="satisfaction" value="4">
+            Satisfied</label>           
+            <label for="satisfaction-3" required><input type="radio" id="satisfaction-3" name="satisfaction" value="3">
+            Neither satisfied nor dissatisfied</label>           
+            <label for="satisfaction-2" required><input type="radio" id="satisfaction-2" name="satisfaction" value="2">
+            Dissatisfied</label>
+            <label for="satisfaction-1" required><input type="radio" id="satisfaction-1" name="satisfaction" value="1">
+            Completely dissatisfied</label>
+    </div>
+        <h2>Your favourite feature</h2>
+            <p>You can select as much as you wish</p>
+
+<label for="checkbox">
+            <input type="checkbox" name="property" value="Performance">
+            Performance
+        </label>
+
+        <label for="checkbox">
+            <input type="checkbox" name="property" value="Battery Life">
+            Battery Life
+        </label>
+
+        <label for="checkbox">
+            <input type="checkbox" name="property" value="Design">
+            Design
+        </label>
+
+        <label for="checkbox">
+            <input type="checkbox" name="property" value="User Interface">
+            User Interface
+        </label>
+
+            
+            <!-- Customer Service -->
+            <h2>Customer Service</h2>
+            <label for="customer-service-rating">Rate Customer Service (1-10):</label>
+            <input type="number" id="customer-service-rating" name="customer-service-rating" min="1" max="10">
+
+            <!-- Website/Online Experience -->
+            <h2>Website/Online Experience</h2>
+            <label for="website-experience">Rate Website Experience (1-10):</label>
+            <input type="number" id="website-experience" name="website-experience" min="1" max="10">
+
+            <!-- Likelihood to Recommend -->
+            <h2>Likelihood to Recommend</h2>
+            <label for="likelihood-to-recommend">How likely are you to recommend our device to others?</label>
+            <select id="likelihood-to-recommend" name="likelihood-to-recommend">
+                <option value="promoter">Promoter (9-10)</option>
+                <option value="passive">Passive (7-8)</option>
+                <option value="detractor">Detractor (1-6)</option>
+            </select>
+
+            <!-- Issues and Improvement Areas -->
+            <h2>Issues and Improvement Areas</h2>
+            <label for="improvement-suggestions">Any suggestions for improvement?</label>
+            <textarea id="improvement-suggestions" name="improvement-suggestions" rows="4" placeholder="Your suggestions..."></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submit">Submit Survey</button>
+        </form>
+    </div>
+</body>
+
+</html>
